@@ -1,0 +1,72 @@
+/* Dashboard Styles */
+.page {
+  font-family: "'Helvetica Neue', Arial, sans-serif";
+  background: "#fff";
+  min-height: "100vh";
+  color: "#111";
+  overflow-x: "hidden";
+}
+
+/* Shared utility styles */
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.transition-smooth {
+  transition: all 0.2s ease;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .page {
+    padding: 0 16px;
+  }
+  
+  .categoryGrid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+  
+  .grid {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  }
+  
+  .main {
+    flex-direction: column;
+    gap: 24px;
+  }
+  
+  .sidebar {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .heroTitle {
+    font-size: 48px;
+  }
+  
+  .navLinks {
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+  
+  .navRight {
+    gap: 8px;
+  }
+}
